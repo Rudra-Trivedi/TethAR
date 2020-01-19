@@ -29,7 +29,7 @@ namespace NRKernal.NRExamples
         public List<Sprite> Images;
         public TextMeshProUGUI textMesh, ConsumptionText, MedText, EquipmentText ;
         public Image ChatImage;
-        public GameObject PointerImage;
+        
         public GameObject ImagePanel;
 
         
@@ -39,7 +39,7 @@ namespace NRKernal.NRExamples
 
         private void Start()
         {
-            Consumptioncounter = 2;
+            Consumptioncounter = 3;
             MedCounter = 2;
             EquipmentCounter = 2;
             InvokeRepeating("RandomString", 3f, 6f);
@@ -60,19 +60,16 @@ namespace NRKernal.NRExamples
         }
 
 
-        void GetHeadRotation()
-        {
-            PointerImage.transform.rotation = CenterCamera.transform.rotation;
-        }
+      
 
 
         void Update()
         {
             ConsumptionText.text = Consumptioncounter.ToString();
-            MedText.text = MedText.ToString();
-            EquipmentText.text = EquipmentText.ToString();
+            MedText.text = MedCounter.ToString();
+            EquipmentText.text = EquipmentCounter.ToString();
 
-            GetHeadRotation();
+           
 
 
             if(NRInput.GetButtonDown(ControllerButton.APP))
@@ -110,17 +107,26 @@ namespace NRKernal.NRExamples
                             if (ResourceFlag.gameObject.tag == "Consumption")
                             {
                                 ResourceFlag.gameObject.SetActive(false);
-                                Consumptioncounter--;
+                                if (Consumptioncounter > 0)
+                                {
+                                    Consumptioncounter--;
+                                }
                             }  
                             if (ResourceFlag.gameObject.tag == "Medicine")
                             {
                                 ResourceFlag.gameObject.SetActive(false);
-                                Consumptioncounter--;
+                                if (MedCounter > 0)
+                                {
+                                    MedCounter--;
+                                }
                             }  
                             if (ResourceFlag.gameObject.tag == "Equipment")
                             {
                                 ResourceFlag.gameObject.SetActive(false);
-                                Consumptioncounter--;
+                                if (EquipmentCounter > 0)
+                                {
+                                    EquipmentCounter--;
+                                }
                             }
                             
 

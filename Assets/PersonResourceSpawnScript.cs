@@ -9,7 +9,7 @@ public class PersonResourceSpawnScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int i = 0; //Random.Range(0, 3);
+        int i = Random.Range(0, 3);
         Instantiate(ResourceList[i], new Vector3(this.transform.position.x, this.transform.position.y + 0.15f, this.transform.position.z), Quaternion.identity, this.gameObject.transform);
     }
 
