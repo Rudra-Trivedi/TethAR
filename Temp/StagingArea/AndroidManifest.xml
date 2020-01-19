@@ -11,7 +11,7 @@
       </intent-filter>
     </activity>
     <meta-data android:name="nreal_sdk" android:value="true" />
-    <meta-data android:name="unity.build-id" android:value="78f1a65a-e44d-48ed-bfa1-e85f968d2aae" />
+    <meta-data android:name="unity.build-id" android:value="4445767d-ddfe-4ed9-b982-0aad9dcb801d" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="True" />
   </application>

@@ -1,4 +1,4 @@
-#Sun Jan 19 13:42:03 EST 2020
+#Sun Jan 19 13:51:43 EST 2020
 base.0=E\:\\projects\\Nrealdemo\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.1=classes.dex
 renamed.1=classes2.dex

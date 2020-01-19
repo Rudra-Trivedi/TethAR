@@ -83,7 +83,7 @@ namespace NRKernal.NRExamples
                         BodyObj = hitResultdup.collider.gameObject;
                         PosBody = BodyObj.transform.position;
                         BodyObj.transform.GetChild(1).gameObject.SetActive(false);
-                        Instantiate(Blip[0], new Vector3(PosBody.x, PosBody.y + 0.15f, PosBody.z), Quaternion.identity, BodyObj.transform);
+                        Instantiate(Blip[0], new Vector3(PosBody.x, PosBody.y + 0.8f, PosBody.z), Quaternion.identity, BodyObj.transform);
                     }
                 }
 
